@@ -9,11 +9,11 @@ on:
       APP_NAME_PREFIX: 
         description: 'Prefix to be used in naming Azure resources'
         required: true
-        default: 'prefix'
+        default: 'az-swa-func'
       RESOURCE_GROUP_NAME: 
         description: 'Resource Group to deploy Azure resources'
         required: true
-        default: 'resource-group'
+        default: 'swa_func_rg'
       API_NAME: 
         description: 'API name'
         required: true
@@ -21,19 +21,19 @@ on:
       API_DOCUMENT_URL: 
         description: 'API definition URL'
         required: true
-        default: 'https://<fuction-name>.azurewebsites.net/api/swagger.json'
+        default: 'https://swafunc.azurewebsites.net/api/swagger.json'
       APIM_NAME: 
         description: 'APIM name'
         required: true
-        default: 'apim-name'
+        default: 'apim-todo-test'
       FUNCTION_NAME: 
         description: 'Azure Functions name'
         required: true
-        default: 'function-name'
+        default: 'swa-func-todo'
       ORIGIN_URL: 
         description: 'Client app URL' # This is CDN endpoint URL
         required: true
-        default: 'https://<cdn-endpoint-name>.azureedge.net'              
+        default: 'https://cdn-endpoint-swafunc.azureedge.net'              
   
 # CONFIGURATION
 # For help, go to https://github.com/Azure/Actions
